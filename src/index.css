@@ -1,0 +1,30 @@
+* {
+	font-family: system-ui, sans-serif;
+}
+
+.main-title {
+	font-size: 36px;
+	font-weight: 700;
+	color: #1d1d1d;
+}
+
+.form-label {
+	display: inline-block;
+	font-size: 18px;
+	color: #333333;
+	margin-bottom: 0.5rem;
+}
+
+.form-control {
+	display: block;
+	font-size: 24px;
+	background: #e6e6e6;
+	color: #303030;
+	border: 2px solid #696969;
+	border-radius: 0.4rem;
+}
+
+.form-control:focus {
+	background: #d7d7d7;
+	color: #1d1d1d;
+}
