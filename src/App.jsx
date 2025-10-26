@@ -9,9 +9,6 @@ export default function App() {
 			<Navbar/>
 			<Header title="Titolo"/>
 			<List list={list}></List>
-			<h1 className="main-title">Selfwork Introduzione React</h1>
-			<label htmlFor="inputId" className="form-label">Label</label>
-			<input type="text" className="form-control" id="inputId" placeholder="placeholder" />
 		</>
 	)
 }
