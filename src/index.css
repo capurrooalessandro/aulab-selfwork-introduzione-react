@@ -14,6 +14,31 @@
 	--navbar-color: #e3e3e3;
 	--nav-link: #4a4a4a;
 	--nav-link-hover: #1b1b1b;
+
+	--btn-color: #fff;
+	--btn-increment-bg-color: #0d6efd;
+	--btn-increment-border-color: var(--btn-increment-bg-color);
+	--btn-increment-bg-color-hover: #0b5ed7;
+	--btn-increment-border-color-hover: #0a58ca;
+	--btn-increment-bg-color-active: #0a58ca;
+	--btn-increment-border-color-active: #0a53be;
+
+	--btn-submit-bg-color: var(--btn-increment-bg-color);
+	--btn-submit-border-color: var(--btn-increment-border-color);
+	--btn-submit-bg-color-hover: var(--btn-increment-bg-color-hover);
+	--btn-submit-border-color-hover: var(--btn-increment-border-color-hover);
+	--btn-submit-bg-color-active: var(--btn-increment-bg-color-active);
+	--btn-submit-border-color-active: var(--btn-increment-border-color-active);
+
+	--btn-decrement-bg-color: #dc3545;
+	--btn-decrement-border-color: var(--btn-decrement-bg-color);
+	--btn-decrement-bg-color-hover: #bb2d3b;
+	--btn-decrement-border-color-hover: #b02a37;
+	--btn-decrement-bg-color-active: #b02a37;
+	--btn-decrement-border-color-active: #a52834;
+
+	--card-bg: #99ff8c;
+	--card-border-color: #272727;
 }
 
 body {
@@ -82,6 +107,22 @@ ul .array-list {
 	font-size: 23px;
 }
 
+.form-title{
+	font-size: 34px;
+	margin: 0 0 10px;
+}
+
+.form-container, .counter-container{
+	padding: 20px 10px 20px 10px;
+}
+
+.counter-container p {
+	font-size: 28px;
+}
+
+.form-field {
+	padding: 10px 10px 16px 10px;
+}
 
 .form-label {
 	display: inline-block;
@@ -97,11 +138,61 @@ ul .array-list {
 	color: var(--form-color);
 	border: 2px solid var(--form-border-color);
 	border-radius: 0.4rem;
-	margin-bottom: 0.5rem;
 }
 
 .form-control:focus {
 	background: var(--form-background-focus);
 	color: var(--form-color-focus);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 36px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1;
+    user-select: none;
+	margin-right: 2px;
+	color: var(--btn-color);
+}
+
+.btn-increment, .btn-submit {
+	background: var(--btn-increment-bg-color);
+	border: 1px solid var(--btn-increment-border-color);
+}
+
+.btn-decrement {
+	background: var(--btn-decrement-bg-color);
+	border: 1px solid var(--btn-decrement-border-color);
+}
+
+.btn-decrement:hover {
+	background: var(--btn-decrement-bg-color-hover);
+	border-color: var(--btn-decrement-border-color-hover);
+}
+
+.btn-decrement:active {
+	background: var(--btn-decrement-bg-color-active);
+	border-color: var(--btn-decrement-border-color-active);
+}
+
+.btn-increment:hover, .btn-submit:hover {
+	background: var(--btn-increment-bg-color-hover);
+	border-color: var(--btn-increment-border-color-hover);
+}
+
+.btn-increment:active, .btn-submit:active {
+	background: var(--btn-increment-bg-color-active);
+	border-color: var(--btn-increment-border-color-active);
+}
+
+.card {
+	margin-top: 26px;
+	padding: 16px;
+	border: 1px solid var(--card-border-color);
+	border-radius: 12px;
+	background: var(--card-bg);
+	max-width: 320px;
 }
 
