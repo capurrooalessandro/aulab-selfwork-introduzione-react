@@ -1,6 +1,6 @@
 export default function Navbar({ title }) {
     return (
-        <nav class="navbar">
+        <nav className="navbar">
             <ul className="nav-list">
                 <li>
                     <a className="nav-link" href="#" target="_blank" rel="noopener noreferrer">Link 1</a>
