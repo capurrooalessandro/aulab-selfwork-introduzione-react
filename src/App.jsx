@@ -49,8 +49,12 @@ export default function App() {
 				<Form.Group>
 					<Form.Field>
 						<Form.NameInput name={name} setName={setName}/>
+					</Form.Field>
+
+					<Form.Field>
 						<Form.EmailInput email={email} setEmail={setEmail}/>
 					</Form.Field>
+					
 					<Form.SubmitButton>Add to card</Form.SubmitButton>
 				</Form.Group>
 
