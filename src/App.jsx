@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import List from "./components/List";
 import Counter from "./components/Counter";
 import Form from "./components/Form";
+import LoadingData from "./components/LoadingData";
 
 import { useState } from "react";
 
@@ -37,6 +38,8 @@ export default function App() {
 			</List>
 
 			<Counter/>
+
+			<LoadingData/>
 
 			<Form>
 				<h3 className="form-title">Form:</h3>

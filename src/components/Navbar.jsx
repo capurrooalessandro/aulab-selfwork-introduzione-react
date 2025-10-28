@@ -1,4 +1,4 @@
-export default function Navbar({ title }) {
+export default function Navbar() {
     return (
         <nav className="navbar">
             <ul className="nav-list">

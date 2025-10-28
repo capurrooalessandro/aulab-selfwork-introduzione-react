@@ -1,6 +1,6 @@
 export default function Header({ title }) {
     return (
-        <header class="header">
+        <header className="header">
             <h1>{title}</h1>
         </header>
     )
