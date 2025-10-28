@@ -6,6 +6,8 @@ import Form from "./components/Form";
 import LoadingData from "./components/LoadingData";
 import { useState } from "react";
 
+let idCounter = 0;
+
 export default function App() {
 	const list = ["Marco", "Alessandro", "Matteo", "Simone", "Roberto"];
 
@@ -19,7 +21,7 @@ export default function App() {
         e.preventDefault();
         setFormData([
 			...formData, 
-			{id: formData, name: name, email: email}
+			{id: idCounter++, name: name, email: email}
 		]);
 		setSubmitted(formData);
     }
