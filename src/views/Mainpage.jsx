@@ -54,14 +54,14 @@ export default function Mainpage() {
 
                     <Form.SubmitButton>Add to card</Form.SubmitButton>
                 </Form.Group>
-
-                {submitted && formData.map(({name, email, id}) => 
-                    <Form.Card key={id}>
-                        <Form.CardName>Name: {name}</Form.CardName>
-                        <Form.CardEmail>Email: {email}</Form.CardEmail>
-                    </Form.Card>
-                )}
             </Form>
+            
+            {submitted && formData.map(({name, email, id}) => 
+                <Form.Card key={id}>
+                    <Form.CardName>Name: {name}</Form.CardName>
+                    <Form.CardEmail>Email: {email}</Form.CardEmail>
+                </Form.Card>
+            )}
         </>
     )
 }
